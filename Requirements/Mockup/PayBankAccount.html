@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #d0e4fe;
+}
+
+h1 {
+    color: orange;
+    text-align: left;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+div.InputGroup {
+    border-style:ridge;
+	border-radius: 25px;
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 5px;
+	padding-top: 25px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+	max-width:20%;
+	
+ 	}
+	
+	div.ImageView {
+    border-style:none;
+		
+ 	}
+</style>
+<head>
+
+<body>
+
+<h1> Pay a Bank Account </h1>
+
+
+<div class="InputGroup">
+Bank:
+<select name="bank" > 
+	<option value="State Bank of India"> State Bank of India</option>
+	<option value="ICICI Bank"> ICICI Bank </option>
+	<option value="Kotak Mahindra Bank">Kotak Mahindra Bank</option>
+        <option value="blank" selected></option>
+</select>
+</br></br>
+Twelve digit Account Number:
+<input name="Account" type="number" min=1 max=999999999999 </input>
+<br></br>
+Amount:
+<input name="Amount" type="number" size=7 min=1 max=9999999999 </input>
+<br></br>
+Remarks:
+<input name="Remarks" type="number" size=7 min=1 max=9999999999 </input>
+<br></br>
+<input name="Confirm" type="button" onclick="location.href='PayBankAccountConfirm.html'" value="Proceed With Payment") </input>
+<br></br>
+<input name="Return" type="button" onclick="location.href='main.html'" value="Return to Main Screen") </input>
+<br></br>
+</div>
+
+<body>
+<html>
