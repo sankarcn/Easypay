@@ -39,12 +39,12 @@ div.InputGroup {
 
 <body>
 
-<h1> Pay a Bank Account </h1>
+<h1> Confirm Pay a Bank Account </h1>
 
 
 <div class="InputGroup">
 Bank:
-<select name="bank" > 
+<select name="bank" readonly> 
 	<option value="State Bank of India"> State Bank of India</option>
 	<option value="ICICI Bank"> ICICI Bank </option>
 	<option value="Kotak Mahindra Bank">Kotak Mahindra Bank</option>
@@ -52,7 +52,7 @@ Bank:
 </select>
 </br></br>
 Twelve digit Account Number:
-<input name="Account" type="number" min=1 max=999999999999 </input>
+<input name="Account" type="number" min=1 max=999999999999 readonly></input>
 <br></br>
 
 Amount:
@@ -64,13 +64,16 @@ Transaction Fee:
 Total Amount:
 <input name="TotalAmount" type="number" size=7 min=1 max=9999999999 readonly></input>
 <br></br>
+Recipient Name:
+<input name="Rname" type="text" size=20  readonly></input>
+<br></br>
 Remarks:
 <input name="Remarks" type="number" size=7 min=1 max=9999999999 readonly></input>
 <br></br>
 You Password:
 <input name="WalletPassword" type="password" size=7 min=1 max=9999999999 ></input>
 <br></br>
-<input name="Confirm" type="button" onclick="location.href='PayMMIDMOBIDConfirm.html'" value="Proceed With Payment")> </input>
+<input name="Confirm" type="button" onclick="location.href='PayBankAccountConfirm.html'" value="Proceed With Payment")> </input>
 <br></br>
 <input name="Return" type="button" onclick="location.href='PayBankAccount.html'" value="Return to Previous Screen")> </input>
 <br></br>
